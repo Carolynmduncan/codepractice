@@ -7,9 +7,11 @@ def encrypt(direction, text, shift):
   #Shifts each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text. 
   if direction.lower() == "encode":
     text = text[-shift:] + text[:-shift] 
+    text = ' '.join(text)
   #To decode an encrypted mssage, shifts the 'text' back by the original shift amount and prints the decrypted text.
   if direction.lower() == "decode":
     text = text[+shift:] + text[:+shift]
+    text = ' '.join(text)
   print(text)
 
 encrypt(direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n"), text = input("Type your message:\n").lower(), shift = int(input("Type the shift number:\n")))

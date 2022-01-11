@@ -5,15 +5,14 @@ text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 #TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
-direction = "encode"
-text = "tbd"
-
-()shift]
+def encrypt(direction, text, shift):
+  text = list(text)
+  shift = int(shift)
+  if direction.lower() == "encode":
+    text = text[-shift:] + text[:-shift] 
   print(text)
 
-
-    
-encrypt(direction="encode", text="boo", shift=3)
+encrypt(direction="encode", text="boo", shift=2)
 
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     #e.g. 

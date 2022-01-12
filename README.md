@@ -1,5 +1,6 @@
-# codepractice
+# Python Practice
 
-### Python programs
+### Programs
 
-1. main.py: Caesar cipher encryption and decryption
+1. Caesar cipher encryption and decryption
+2. Blind auction 

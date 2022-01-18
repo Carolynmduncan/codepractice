@@ -1,9 +1,20 @@
 from replit import clear
 silent_auction = {}
-
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
 import math
-import art
-print(art.logo)
+print(logo)
 
 def add_bids():
   clear()
